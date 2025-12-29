@@ -1,0 +1,30 @@
+/* bible_style.css */
+body {
+  margin: 1em 1em 1em 1em;  /* top, right, bottom, left */
+  line-height: 1.6;
+  font-family: serif;     /* professional Bible text look */
+}
+
+.book-title {
+  text-align: center;
+  font-size: 1.5em;
+  margin-bottom: 1.5em;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 0.5em;
+}
+
+a[name] {
+  display: inline;        /* keep verse inline with text */
+  text-decoration: none;
+  color: black;
+}
+
+/* Extract verse number and style it */
+a[name]::first-line {
+  /* This won't work, so we'll parse with regex */
+}
+
+p {
+  margin-top: 2em;        /* Big space before new chapter */
+  margin-bottom: 0.5em;
+}
